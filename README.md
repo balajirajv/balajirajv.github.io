@@ -1,67 +1,46 @@
-# Next.js Portfolio
+# Portfolio
 
-This is a personal portfolio built with Next.js, showcasing projects, skills, and background information.
+This is my personal portfolio website built to showcase my projects, skills, and professional background. The site is built using HTML, CSS, and JavaScript and is hosted via GitHub Pages.
 
-## Project Structure
+## 🚀 Features
+
+- Responsive design that works across devices.
+- Interactive sections highlighting projects and experience.
+- Contact form for visitors to reach out.
+- Hosted using GitHub Pages with CI deployment workflow.
+
+## 🛠️ Tech Stack
+
+- HTML, CSS, JavaScript
+- GitHub Actions for deployment
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+No special prerequisites — just a modern web browser.
+
+### Installation
+
+Clone the repository and open `index.html` in your browser:
 
 ```
-nextjs-portfolio
-├── src
-│   ├── pages
-│   │   ├── index.tsx       # Main entry point for the portfolio
-│   │   ├── about.tsx       # About page with personal information
-│   │   └── projects.tsx     # Projects showcase
-│   ├── components
-│   │   ├── Header.tsx      # Header component with navigation
-│   │   ├── Footer.tsx      # Footer component with copyright info
-│   │   └── Resume.tsx      # Component to display resume information
-│   ├── styles
-│   │   └── globals.css      # Global CSS styles
-│   └── lib
-│       └── resume.ts        # Data and functions related to the resume
-├── public
-│   └── resume.pdf           # PDF version of the resume
-├── package.json             # npm configuration file
-├── tsconfig.json            # TypeScript configuration file
-├── next.config.js           # Next.js configuration file
-└── README.md                # Project documentation
+bash
+git clone https://github.com/BalajigowdaHS/Portfolio.git
+cd Portfolio
+# open index.html in your browser
 ```
 
-## Features
+The site is static, so there is no build step required.
 
-- Responsive design
-- Easy navigation between sections
-- Showcase of projects with links to repositories
-- Downloadable resume in PDF format
+## 📺 Demo
 
-## Setup Instructions
+You can view the live website here: [https://balajigowdahs.github.io/Portfolio/](https://balajigowdahs.github.io/Portfolio/).
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/nextjs-portfolio.git
-   ```
+## 🤝 Contributing
 
-2. Navigate to the project directory:
-   ```
-   cd nextjs-portfolio
-   ```
+If you'd like to suggest improvements or new sections, feel free to open an issue or submit a pull request.
 
-3. Install dependencies:
-   ```
-   npm install
-   ```
+## 🗭️ License
 
-4. Run the development server:
-   ```
-   npm run dev
-   ```
-
-5. Open your browser and visit `http://localhost:3000` to view the portfolio.
-
-## Usage
-
-Feel free to customize the content in the `src/lib/resume.ts` file to update your personal information, work experience, education, and skills. You can also add new projects in the `src/pages/projects.tsx` file.
-
-## License
-
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License.
