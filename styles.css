@@ -487,6 +487,8 @@ p {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s ease;
+  /* ensure text follows theme colors */
+  color: var(--text);
 }
 
 .filter-chip:hover {
@@ -498,6 +500,11 @@ p {
   background: var(--accent);
   color: #fff;
   border-color: var(--accent);
+}
+
+/* in case variables don't propagate for some reason, force white text in dark mode */
+[data-theme="dark"] .filter-chip {
+  color: #fff;
 }
 
 .project-grid {
