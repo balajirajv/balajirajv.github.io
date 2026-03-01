@@ -70,7 +70,7 @@ const sectionObserver = new IntersectionObserver(
         navMap.forEach((link) => link.classList.remove("active"));
         const activeLink = navMap.get(entry.target.id);
         if (activeLink) {
-          activeLink.classList.add("active");
+          //activeLink.classList.add("active");
         }
       }
     });
