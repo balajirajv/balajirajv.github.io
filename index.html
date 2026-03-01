@@ -167,13 +167,18 @@ I have built predictive models, designed analytical dashboards, and applied stat
         </div>
       </section>
 
-      <section id="growth-journey" class="growth-container">
-        <div class="growth-header">
-          <h2 class="growth-main-title">Continuous Learning Timeline</h2>
-          <p class="growth-subtitle">A strategic trajectory from technical foundations to AI-driven leadership.</p>
+      <section id="growth-journey" class="section growth-container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">
+            <img class="eyebrow-icon" src="./assets/icon-trail.svg" alt="" aria-hidden="true" />
+            Timeline
+          </p>
+          <h2>Continuous Learning Timeline</h2>
+          <p class="projects-lede">A strategic trajectory from technical foundations to AI-driven leadership.</p>
         </div>
 
-        <div class="timeline-track">
+        <div class="about-card reveal">
+          <div class="timeline-track">
           <div class="main-line"></div>
 
           <div class="timeline-point">
@@ -256,150 +261,13 @@ I have built predictive models, designed analytical dashboards, and applied stat
               <p class="expertise">Sr. Program Manager</p>
             </div>
           </div>
-        </div>
+        </div> <!-- end about-card -->
       </section>
 
-      <style>
-      /* CSS Variables matching your image color palette */
-      :root {
-        --vbr-orange: #d4512e; /* The burnt orange from your screenshot */
-        --text-black: #000000;
-        --text-gray: #555555;
-        --bg-white: #ffffff;
-      }
-
-      .growth-container {
-        background-color: var(--bg-white);
-        padding: 70px 40px;
-        font-family: 'Inter', sans-serif; /* Replace with your site's font */
-        border-bottom: 1px solid #f0f0f0;
-      }
-
-      .growth-header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-
-      .growth-main-title {
-        font-size: 1.5rem;
-        font-weight: 800;
-        color: var(--text-black);
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        letter-spacing: -1px;
-      }
-
-      .growth-subtitle {
-        color: var(--text-gray);
-        font-size: 1.1rem;
-      }
-
-      .timeline-track {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        max-width: 1300px;
-        margin: 0 auto;
-        position: relative;
-        padding-top: 40px;
-        overflow-x: auto; /* Handles smaller screens */
-        gap: 30px;
-      }
-
-      .main-line {
-        position: absolute;
-        top: 52px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #eeeeee;
-        z-index: 1;
-      }
-
-      .timeline-point {
-        position: relative;
-        flex: 1;
-        min-width: 90px;
-        z-index: 2;
-        text-align: center;
-      }
-
-      .dot {
-        width: 24px;
-        height: 24px;
-        background-color: var(--bg-white);
-        border: 4px solid var(--vbr-orange);
-        border-radius: 50%;
-        margin: 0 auto 20px;
-        transition: background-color 0.3s ease;
-      }
-
-      .point-content {
-        padding: 0 10px;
-      }
-
-      .year {
-        display: block;
-        font-weight: 800;
-        font-size: 1rem;
-        color: var(--vbr-orange);
-        margin-bottom: 8px;
-      }
-
-      .role {
-        font-size: 0.95rem;
-        font-weight: 700;
-        color: var(--text-black);
-        margin: 0 0 5px 0;
-        line-height: 1.2;
-      }
-
-      .expertise {
-        font-size: 0.8rem;
-        color: var(--text-gray);
-        line-height: 1.4;
-        font-weight: 400;
-      }
-
-      /* Special styling for current/future states */
-      .active-point .dot {
-        background-color: var(--vbr-orange);
-      }
-
-      .goal-dot {
-        border-style: dashed;
-        border-width: 2px;
-      }
-
-      .goal-point .year {
-        color: var(--text-black);
-      }
-
-      /* Mobile Responsive adjustment */
-      @media (max-width: 768px) {
-        .timeline-track {
-          flex-direction: column;
-          align-items: flex-start;
-          padding-left: 20px;
-        }
-        .main-line {
-          width: 2px;
-          height: 100%;
-          left: 31px;
-          top: 0;
-        }
-        .timeline-point {
-          display: flex;
-          gap: 20px;
-          text-align: left;
-          margin-bottom: 40px;
-        }
-        .dot { margin: 0; flex-shrink: 0; }
-      }
-      </style>
 
 
-      <!--<section id="experience" class="section">
+      
+      <section id="experience" class="section">
         <div class="section-heading reveal">
           <p class="eyebrow">
             <img class="eyebrow-icon" src="./assets/icon-trail.svg" alt="" aria-hidden="true" />
@@ -407,253 +275,66 @@ I have built predictive models, designed analytical dashboards, and applied stat
           </p>
           <h2>Where I've Worked</h2>
         </div>
-        <div class="exp-section">
-          <div class="exp-header reveal">
-            <h3>AI Data Analyst</h3>
-            <p class="role">xAI | Sep 2024 - Present</p>
-          </div>
-          <div class="exp-cards">
-            <div class="exp-row reveal">
-              <div class="exp-key-card">91% Data Quality</div>
-              <div class="exp-desc-card"><p>Analyzed large-scale human-labeled datasets using RLHF and supervised fine-tuning techniques, improving model performance and achieving 91% data quality across evaluation metrics.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">12 AI Projects</div>
-              <div class="exp-desc-card"><p>Contributed to multimodal data initiatives for 12 AI projects, including image, audio, video datasets, by rigorous research and adhere to guidelines.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Feedback Loops</div>
-              <div class="exp-desc-card"><p>Developed Word, Excel dashboards enabling real-time Quality tracking, experiment feedback loops, reporting and stakeholder communication.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">AI Prompt Engineering</div>
-              <div class="exp-desc-card"><p>Gained hands-on expertise in AI prompt engineering &amp; image generation using generative AI models, including Gemini, Grok, and OpenAI.</p></div>
-            </div>
-          </div>
-        </div>
 
-        <div class="exp-section">
-          <div class="exp-header reveal">
-            <h3>Marketing Research Assistant</h3>
-            <p class="role">Center for Services Leadership | Jun 2024 - Sep 2024</p>
-          </div>
-          <div class="exp-cards">
-            <div class="exp-row reveal">
-              <div class="exp-key-card">R -> Python</div>
-              <div class="exp-desc-card"><p>Converted a full R-based marketing analytics curriculum into Python, building reusable notebooks to improve accessibility for graduate analytics learners.</p></div>
+        <div class="about-card reveal">
+          <div class="job-entry">
+            <div class="job-info">
+              <h3 class="job-title">AI Data Analyst</h3>
+              <p class="job-meta">xAI <span class="separator">|</span> Sep 2024 - Present</p>
             </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Research Analytics</div>
-              <div class="exp-desc-card"><p>Bridged academic research and practical analytics applications through scalable, notebook-based learning modules.</p></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="exp-section">
-          <div class="exp-header reveal">
-            <h3>Assistant Project Manager</h3>
-            <p class="role">Saint-Gobain India Private Limited – Glass Business | Jul 2019 - Jul 2023</p>
-          </div>
-          <div class="exp-cards">
-            <div class="exp-row reveal">
-              <div class="exp-key-card">90+ Projects</div>
-              <div class="exp-desc-card"><p>Coordinated 90+ cross-functional projects end-to-end across operations, integrating functions to deliver on-time and strategic business values.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Efficiency</div>
-              <div class="exp-desc-card"><p>Led high-impact projects in safety and industrial efficiency, using KPI definition, Gemba walks, and 5 Why kaizen to deliver OpEx level outcomes.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Six Sigma</div>
-              <div class="exp-desc-card"><p>Applied Lean Six Sigma methodology to optimize warehouse consumables, delivering 8 lakhs in cost savings and reducing unwanted movements by 40%.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Business Intelligence</div>
-              <div class="exp-desc-card"><p>Built scalable KPI dashboard and analytics frameworks using Excel, Power BI, ETL, and visualization to track operational performance and close gaps.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">94% Employee Engagement</div>
-              <div class="exp-desc-card"><p>Established continuous improvement culture by training employees on 5S, kaizen tools, root cause analysis, and waste elimination, maintaining 94% employee engagement.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Executive Reporting</div>
-              <div class="exp-desc-card"><p>Developed and presented senior management reports; organized meetings to communicate progress, achieving high-level alignment and buy-in.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Process Governance</div>
-              <div class="exp-desc-card"><p>Maintained steering committee processes including SOP, audits, change management, optimized workflow, and sustained performance improvements.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">S+ Performance</div>
-              <div class="exp-desc-card"><p>Achieved S+ (95%) rating in yearly appraisals with increased authority, by consistently exceeding annual goals and delivering key operational metrics.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">3.5% Savings</div>
-              <div class="exp-desc-card"><p>Delivered 3.5% savings on the budget planned, ROI, and improved safety metrics of the operations by continuous improvement and kaizen tools.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Digital Transform</div>
-              <div class="exp-desc-card"><p>Advanced on project methodologies by practicing Lean Six Sigma, digital transformation, Power BI, Python to enhance processes and efficiency.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">KPI Dashboards</div>
-              <div class="exp-desc-card"><p>Developed executive-ready KPI dashboards using Excel, with 98% data integrity, supporting operational reviews, audits, and KPI performance tracking.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Value Stream Mapping</div>
-              <div class="exp-desc-card"><p>Conducted value stream mapping and structured process studies to identify bottlenecks/inefficiencies and recommend data-backed improvements.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Standards</div>
-              <div class="exp-desc-card"><p>Standardized reporting templates and data definitions, reducing rework and improving analytics governance.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Documentation</div>
-              <div class="exp-desc-card"><p>Supported cross-functional program documentation and performance analysis to enhance compliance and operational readiness.</p></div>
-            </div>
-            <div class="exp-row reveal">
-              <div class="exp-key-card">Administration</div>
-              <div class="exp-desc-card"><p>Enabled repeatable, scalable reporting processes aligned with leadership priorities.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>-->
-      
-      <section id="experience" class="style-experience">
-        <div class="section-heading">
-          <p class="eyebrow">
-            <img class="eyebrow-icon" src="./assets/icon-trail.svg" alt="" aria-hidden="true" />
-            Trail
-          </p>
-          <h2>Where I've Worked</h2>
-        </div>
-
-        <div class="job-entry">
-          <div class="job-info">
-            <h3 class="job-title">AI Data Analyst</h3>
-            <p class="job-meta">xAI <span class="separator">|</span> Sep 2024 - Present</p>
-          </div>
-          <ul class="achievement-list">
-            <li><strong>91% Data Quality:</strong> Analyzed large-scale human-labeled datasets using RLHF and supervised fine-tuning techniques, improving model performance and achieving 91% data quality across evaluation metrics.</li>
-            <li><strong>12 AI Projects:</strong> Contributed to multimodal data initiatives for 12 AI projects, including image, audio, video datasets, by rigorous research and adhere to guidelines.</li>
-            <li><strong>Feedback Loops:</strong> Developed Word, Excel dashboards enabling real-time Quality tracking, experiment feedback loops, reporting and stakeholder communication.</li>
-            <li><strong>AI Prompt Engineering:</strong> Gained hands-on expertise in AI prompt engineering & image generation using generative AI models, including Gemini, Grok, and OpenAI.</li>
-          </ul>
-        </div>
-
-        <div class="job-entry">
-          <div class="job-info">
-            <h3 class="job-title">Marketing Research Assistant</h3>
-            <p class="job-meta">ASU - Center for Services Leadership <span class="separator">|</span> Jun 2024 - Sep 2024</p>
-          </div>
-          <ul class="achievement-list">
-            <li><strong>R -> Python:</strong> Converted a full R-based marketing analytics curriculum into Python, building reusable notebooks to improve accessibility for graduate analytics learners.</li>
-            <li><strong>Research Analytics:</strong> Bridged academic research and practical analytics applications through scalable, notebook-based learning modules.</li>
-          </ul>
-        </div>
-
-        <div class="job-entry">
-          <div class="job-info">
-            <h3 class="job-title">Assistant Project Manager</h3>
-            <p class="job-meta">Saint-Gobain India Private Limited <span class="separator">|</span> Jul 2019 - Jul 2023</p>
-          </div>
-          <div class="achievement-grid">
             <ul class="achievement-list">
-              <li><strong>90+ Projects:</strong> Coordinated cross-functional projects end-to-end across operations to deliver strategic business values.</li>
-              <li><strong>Six Sigma:</strong> Applied Lean Six Sigma to optimize warehouse consumables, delivering 8 lakhs in savings and 40% movement reduction.</li>
-              <li><strong>Business Intelligence:</strong> Built scalable KPI dashboard and analytics frameworks using Excel, Power BI, and ETL.</li>
-              <li><strong>94% Engagement:</strong> Established continuous improvement culture by training employees on 5S, kaizen, and RCA.</li>
-              <li><strong>Executive Reporting:</strong> Developed and presented senior management reports to achieve high-level alignment.</li>
-              <li><strong>S+ Performance:</strong> Achieved S+ (95%) rating in yearly appraisals by consistently exceeding annual goals.</li>
-              <li><strong>Digital Transform:</strong> Advanced project methodologies by practicing Lean Six Sigma, Power BI, and Python.</li>
-              <li><strong>Value Stream Mapping:</strong> Conducted structured process studies to identify bottlenecks and recommend data-backed improvements.</li>
+              <li><strong>91% Data Quality:</strong> Analyzed large-scale human-labeled datasets using RLHF and supervised fine-tuning techniques, improving model performance and achieving 91% data quality across evaluation metrics.</li>
+              <li><strong>12 AI Projects:</strong> Contributed to multimodal data initiatives for 12 AI projects, including image, audio, video datasets, by rigorous research and adhere to guidelines.</li>
+              <li><strong>Feedback Loops:</strong> Developed Word, Excel dashboards enabling real-time Quality tracking, experiment feedback loops, reporting and stakeholder communication.</li>
+              <li><strong>AI Prompt Engineering:</strong> Gained hands-on expertise in AI prompt engineering & image generation using generative AI models, including Gemini, Grok, and OpenAI.</li>
             </ul>
+          </div>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="job-entry">
+            <div class="job-info">
+              <h3 class="job-title">Marketing Research Assistant</h3>
+              <p class="job-meta">ASU - Center for Services Leadership <span class="separator">|</span> Jun 2024 - Sep 2024</p>
+            </div>
             <ul class="achievement-list">
-              <li><strong>Efficiency:</strong> Led high-impact projects in safety and industrial efficiency using KPI definition and Gemba walks.</li>
-              <li><strong>Process Governance:</strong> Maintained steering committee processes including SOP, audits, and change management.</li>
-              <li><strong>3.5% Savings:</strong> Delivered 3.5% budget savings and improved safety metrics via continuous improvement.</li>
-              <li><strong>KPI Dashboards:</strong> Developed executive-ready dashboards with 98% data integrity for operational reviews.</li>
-              <li><strong>Standards:</strong> Standardized reporting templates and data definitions, reducing rework.</li>
-              <li><strong>Documentation:</strong> Supported cross-functional program documentation to enhance compliance.</li>
-              <li><strong>Administration:</strong> Enabled repeatable, scalable reporting processes aligned with leadership priorities.</li>
+              <li><strong>R -> Python:</strong> Converted a full R-based marketing analytics curriculum into Python, building reusable notebooks to improve accessibility for graduate analytics learners.</li>
+              <li><strong>Research Analytics:</strong> Bridged academic research and practical analytics applications through scalable, notebook-based learning modules.</li>
             </ul>
+          </div>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="job-entry">
+            <div class="job-info">
+              <h3 class="job-title">Assistant Project Manager</h3>
+              <p class="job-meta">Saint-Gobain India Private Limited <span class="separator">|</span> Jul 2019 - Jul 2023</p>
+            </div>
+            <div class="achievement-grid">
+              <ul class="achievement-list">
+                <li><strong>90+ Projects:</strong> Coordinated cross-functional projects end-to-end across operations to deliver strategic business values.</li>
+                <li><strong>Six Sigma:</strong> Applied Lean Six Sigma to optimize warehouse consumables, delivering 8 lakhs in savings and 40% movement reduction.</li>
+                <li><strong>Business Intelligence:</strong> Built scalable KPI dashboard and analytics frameworks using Excel, Power BI, and ETL.</li>
+                <li><strong>94% Engagement:</strong> Established continuous improvement culture by training employees on 5S, kaizen, and RCA.</li>
+                <li><strong>Executive Reporting:</strong> Developed and presented senior management reports to achieve high-level alignment.</li>
+                <li><strong>S+ Performance:</strong> Achieved S+ (95%) rating in yearly appraisals by consistently exceeding annual goals.</li>
+                <li><strong>Digital Transform:</strong> Advanced project methodologies by practicing Lean Six Sigma, Power BI, and Python.</li>
+                <li><strong>Value Stream Mapping:</strong> Conducted structured process studies to identify bottlenecks and recommend data-backed improvements.</li>
+              </ul>
+              <ul class="achievement-list">
+                <li><strong>Efficiency:</strong> Led high-impact projects in safety and industrial efficiency using KPI definition and Gemba walks.</li>
+                <li><strong>Process Governance:</strong> Maintained steering committee processes including SOP, audits, and change management.</li>
+                <li><strong>3.5% Savings:</strong> Delivered 3.5% budget savings and improved safety metrics via continuous improvement.</li>
+                <li><strong>KPI Dashboards:</strong> Developed executive-ready dashboards with 98% data integrity for operational reviews.</li>
+                <li><strong>Standards:</strong> Standardized reporting templates and data definitions, reducing rework.</li>
+                <li><strong>Documentation:</strong> Supported cross-functional program documentation to enhance compliance.</li>
+                <li><strong>Administration:</strong> Enabled repeatable, scalable reporting processes aligned with leadership priorities.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <style>
-        :root {
-          --brand-orange: #d4512e;
-          --deep-black: #000000;
-          --muted-gray: #444444;
-        }
-
-        .style-experience {
-          background: #fff;
-          padding: 60px 20px;
-          max-width: 1200px;
-          margin: 0 auto;
-          font-family: sans-serif;
-        }
-
-        .job-entry {
-          margin-bottom: 50px;
-          border-left: 3px solid var(--brand-orange);
-          padding-left: 30px;
-        }
-
-        .job-title {
-          font-size: 1.6rem;
-          color: var(--deep-black);
-          margin: 0;
-        }
-
-        .job-meta {
-          color: var(--brand-orange);
-          font-weight: 600;
-          margin: 5px 0 20px 0;
-          font-size: 0.95rem;
-        }
-
-        .separator { color: #ccc; margin: 0 5px; }
-
-        .achievement-list {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-
-        .achievement-list li {
-          margin-bottom: 12px;
-          color: var(--muted-gray);
-          line-height: 1.5;
-          font-size: 0.95rem;
-          position: relative;
-        }
-
-        /* Bold the 'Key Card' part in Orange */
-        .achievement-list li strong {
-          color: var(--brand-orange);
-          font-weight: 700;
-          text-transform: uppercase;
-          font-size: 0.85rem;
-          letter-spacing: 0.5px;
-          display: block; /* Moves the description to the next line for ultimate clarity */
-          margin-bottom: 2px;
-        }
-
-        /* Two column layout for the long Saint-Gobain list */
-        .achievement-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 30px;
-        }
-
-        @media (max-width: 768px) {
-          .achievement-grid { grid-template-columns: 1fr; }
-          .job-entry { padding-left: 20px; }
-        }
-      </style>
 
 
       <section id="projects" class="section">

@@ -395,6 +395,7 @@ p {
   padding: 28px;
   border: 1px solid var(--border);
   border-top: 4px solid var(--accent);
+  margin: 25px 0;
 }
 
 .education-item + .education-item {
@@ -630,6 +631,175 @@ p {
 .exp-desc-card p {
   font-size: 14px;
   line-height: 1.6;
+}
+
+/* timeline / growth section styling */
+.growth-container {
+  background-color: var(--bg-white);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.growth-container .projects-lede {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.growth-container .timeline-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+  overflow-x: auto;
+  gap: 30px;
+}
+
+/* keep existing point styles for timeline */
+.growth-container .main-line {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #eeeeee;
+  z-index: 1;
+}
+
+.growth-container .timeline-point {
+  position: relative;
+  flex: 1;
+  min-width: 90px;
+  z-index: 2;
+  text-align: center;
+}
+
+.growth-container .dot {
+  width: 24px;
+  height: 24px;
+  background-color: var(--bg-white);
+  border: 4px solid var(--accent);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  transition: background-color 0.3s ease;
+}
+
+.growth-container .point-content {
+  padding: 0 10px;
+}
+
+.growth-container .year {
+  display: block;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.growth-container .role {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0 0 5px 0;
+  line-height: 1.2;
+}
+
+.growth-container .expertise {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.growth-container .active-point .dot {
+  background-color: var(--accent);
+}
+
+.growth-container .goal-dot {
+  border-style: dashed;
+  border-width: 2px;
+}
+
+.growth-container .goal-point .year {
+  color: var(--text-black);
+}
+
+@media (max-width: 768px) {
+  .growth-container .timeline-track {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .growth-container .main-line {
+    width: 2px;
+    height: 100%;
+    left: 31px;
+    top: 0;
+  }
+  .growth-container .timeline-point {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .growth-container .dot { margin: 0; flex-shrink: 0; }
+}
+
+/* experience section styling */
+#experience {
+  background: var(--bg-white);
+}
+
+
+#experience .job-title {
+  font-size: 1.6rem;
+  color: var(--text-black);
+  margin: 0;
+}
+
+#experience .job-meta {
+  color: var(--accent);
+  font-weight: 600;
+  margin: 5px 0 20px 0;
+  font-size: 0.95rem;
+}
+
+#experience .separator { color: #ccc; margin: 0 5px; }
+
+#experience .achievement-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#experience .achievement-list li {
+  margin-bottom: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+#experience .achievement-list li strong {
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+#experience .achievement-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  #experience .achievement-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
