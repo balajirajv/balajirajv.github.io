@@ -99,6 +99,47 @@ filterChips.forEach((chip) => {
   });
 });
 
+// Moments carousel (memorable experiences)
+const momentsTrack = document.querySelector('.moments-track');
+const momentCards = Array.from(document.querySelectorAll('.moment-card'));
+const prevMomentBtn = document.querySelector('.carousel-control.prev');
+const nextMomentBtn = document.querySelector('.carousel-control.next');
+let momentIndex = 0;
+
+const updateMomentControls = () => {
+  if (!momentCards.length || !prevMomentBtn || !nextMomentBtn) return;
+
+  prevMomentBtn.disabled = momentIndex === 0;
+  nextMomentBtn.disabled = momentIndex === momentCards.length - 1;
+
+  const activeCard = momentCards[momentIndex];
+  if (activeCard) {
+    activeCard.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+  }
+};
+
+if (prevMomentBtn) {
+  prevMomentBtn.addEventListener('click', () => {
+    if (momentIndex > 0) {
+      momentIndex -= 1;
+      updateMomentControls();
+    }
+  });
+}
+
+if (nextMomentBtn) {
+  nextMomentBtn.addEventListener('click', () => {
+    if (momentIndex < momentCards.length - 1) {
+      momentIndex += 1;
+      updateMomentControls();
+    }
+  });
+}
+
+if (momentCards.length) {
+  updateMomentControls();
+}
+
 const openModal = (templateId) => {
   const template = document.getElementById(templateId);
   if (!template) return;
