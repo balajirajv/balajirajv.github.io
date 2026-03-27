@@ -174,4 +174,13 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+// Image popup for moments
+document.querySelectorAll('.moment-photo-wrap img').forEach(img => {
+  img.addEventListener('click', () => {
+    modalBody.innerHTML = `<img src="${img.src}" alt="${img.alt}" style="width: 150%; height: auto; max-width: none; display: block; margin: 0 auto;">`;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+  });
+});
+
 initTheme();
