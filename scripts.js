@@ -99,6 +99,23 @@ filterChips.forEach((chip) => {
   });
 });
 
+// Moments carousel functionality
+const momentsWrapper = document.querySelector('.moments-track-wrapper');
+const prevBtn = document.querySelector('.carousel-control.prev');
+const nextBtn = document.querySelector('.carousel-control.next');
+
+if (momentsWrapper && prevBtn && nextBtn) {
+  const scrollAmount = 256; // card width (240px) + gap (16px)
+
+  prevBtn.addEventListener('click', () => {
+    momentsWrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    momentsWrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+}
+
 // Moments carousel (memorable experiences)
 const momentsTrack = document.querySelector('.moments-track');
 const momentCards = Array.from(document.querySelectorAll('.moment-card'));
