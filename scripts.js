@@ -153,9 +153,6 @@ if (nextMomentBtn) {
   });
 }
 
-if (momentCards.length) {
-  updateMomentControls();
-}
 
 const openModal = (templateId) => {
   const template = document.getElementById(templateId);
